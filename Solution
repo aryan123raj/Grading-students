@@ -1,0 +1,17 @@
+ public static List<Integer> gradingStudents(List<Integer> grades) {
+    // Write your code here
+    List<Integer>ls =new ArrayList<Integer>();
+    for(int i=0;i<grades.size();i++){
+        int x=grades.get(i);
+        int y=x+5-x%5;
+        if(x>=38 && y-x<3){
+            ls.add(y);
+        }
+        else{
+            ls.add(x);
+        }
+    }
+    return ls;
+    
+ 
+    }
